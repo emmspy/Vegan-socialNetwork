@@ -1,0 +1,48 @@
+.header {
+  height: 20vw;
+  margin: 30px auto;
+  background: url("/background.jpeg") no-repeat;
+  background-size: cover;
+  border-radius: 3vw;
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.044), rgba(0, 0, 0, 0.365));
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+.header-contents h2 {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: max(2.5vw, 12px);
+}
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+}
+.header-contents button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.7vw 2.3vw;
+  background-color: #30851f;
+  font-size: max(0.8vw, 13px);
+  border-radius: 50px;
+}

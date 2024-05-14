@@ -1,0 +1,62 @@
+.recipe-popup-title-cross {
+  width: 20px;
+  cursor: pointer;
+}
+
+.recipe-popup {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  height: 100%;
+  display: grid;
+}
+.recipe-popup-container {
+  place-self: center;
+  width: max(33vw, 33px);
+  color: #808080;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+  box-shadow: 10px 10px 10px 10px #8888889e;
+  
+}
+.recipe-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.recipe-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.recipe-popup-inputs input {
+  font-weight: 700;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.recipe-popup-inputs textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  height: auto;
+  width: 100%;
+}
+.recipe-popup-inputs button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: #30851f;
+  font-size: 15px;
+  cursor: pointer;
+}

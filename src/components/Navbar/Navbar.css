@@ -1,0 +1,79 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  width: 120px;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #30851f;
+  font-size: 18px;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-carrito {
+  width: 30px;
+}
+.navbar .navbar-signin {
+  background: #30851f;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #30851f;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.navbar .navbar-login {
+  background: transparent;
+  font-size: 16px;
+  color: #30851f;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #30851f;
+}
+.navbar li {
+  cursor: pointer;
+}
+.navbar-icon {
+  position: relative;
+}
+
+.navbar-icon .dot {
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+@media (max-width: 950px) {
+  .navbar .logo {
+    width: 140px;
+  }
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right {
+    display: none;
+  }
+  .navbar-right img {
+    width: 22px;
+  }
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
